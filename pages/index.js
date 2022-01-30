@@ -21,7 +21,7 @@ export default function Home() {
     <Flex
       // border={'solid'}
       h="100vh"
-      bgImage="url(/AwalMXM.jpg)"
+      bgImage="url(/landscape.jpg)"
       bgSize={'cover'}
       bgPosition={'center'}
       position={'relative'}
@@ -32,7 +32,7 @@ export default function Home() {
     >
       <Flex
         // border={'solid'}
-        w={'50%'}
+        // w={'50%'}
         direction={'column'}>
       <Flex
         // border={'solid'}
@@ -69,7 +69,7 @@ export default function Home() {
         alignItems={'center'}
         w={400}
         justifyContent={'center'}
-        mt={20}
+        mt={10}
       ><HStack
         spacing={'24px'}
       >
