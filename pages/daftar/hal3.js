@@ -9,8 +9,10 @@ import {
 const Thi = () => {
     return ( 
         <Flex
-        h="100vh"
-        bgImage="url(/landscape.jpg)"
+        flexDirection={['column', 'column', 'row', 'row']}
+        minHeight="100vh"
+        bgImage={['/phone.jpg', '/landscape.jpg', '/landscape.jpg', '/landscape.jpg']}
+        bgPosition={['center', 'bottom', 'bottom', 'bottom']}
         bgSize={'cover'}
         bgPosition={'center'}
         position={'relative'}
@@ -24,9 +26,6 @@ const Thi = () => {
             bgColor={'orange.200'}
             borderRadius={20}>{"<"}</Button>
             </Link>
-            <Flex
-            direction={'column'}>
-                <Flex>
             <Link href='/porto/merch'><a><Flex 
             boxShadow={'dark-lg'}
             borderRadius={20}
@@ -101,13 +100,6 @@ const Thi = () => {
             </Flex>
             </a>
             </Link>
-            </Flex>
-            <Flex
-            fontSize={20}
-            fontWeight={'bold'}
-            justifyContent={'center'}
-            >3</Flex>
-            </Flex>
             <Link href='/daftar/hal4'>
             <Button
             bgColor={'orange.200'}

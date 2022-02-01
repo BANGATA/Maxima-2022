@@ -8,13 +8,31 @@ import {
 
 const Regis = () => {
     return ( 
+        // <Flex flexDirection={['column', 'column', 'row', 'row']}>
+        //     <Flex border={'solid'}>
+        //         Tes
+        //     </Flex>
+        //     <Flex border={'solid'}>
+        //         Ini
+        //     </Flex>
+        //     <Flex border={'solid'}>
+        //         Buat
+        //     </Flex>
+        //     <Flex border={'solid'}>
+        //         Responsive
+        //     </Flex>
+        // </Flex>
         <Flex
-            h="100vh"
-            bgImage="url(/landscape.jpg)"
+            flexDirection={['column', 'column', 'row', 'row']}
+            minHeight="100vh"
+            bgImage={['/phone.jpg', '/landscape.jpg', '/landscape.jpg', '/landscape.jpg']}
+            bgPosition={['center', 'bottom', 'bottom', 'bottom']}
             bgSize={'cover'}
             bgPosition={'center'}
             position={'relative'}
             bgRepeat={'no-repeat'}
+            position={'relative'}
+            // bgGradient='linear(to-b, #fafbee, #e1f0ec)'
             justifyContent={'center'}
             alignItems={'center'}
             flexWrap={'wrap'}
@@ -24,9 +42,6 @@ const Regis = () => {
             bgColor={'orange.200'}
             borderRadius={20}>{"<"}</Button>
             </Link>
-            <Flex
-            direction={'column'}>
-                <Flex>
             <Link href='/porto/website'><a><Flex 
             boxShadow={'dark-lg'}
             borderRadius={20}
@@ -101,13 +116,6 @@ const Regis = () => {
             </Flex>
             </a>
             </Link>
-            </Flex>
-            <Flex
-            fontSize={20}
-            fontWeight={'bold'}
-            justifyContent={'center'}
-            >1</Flex>
-            </Flex>
             <Link href='/daftar/hal2'>
             <Button
             bgColor={'orange.200'}

@@ -21,9 +21,9 @@ export default function Home() {
     <Flex
       // border={'solid'}
       h="100vh"
-      bgImage="url(/landscape.jpg)"
+      bgImage={['/phone.jpg', '/landscape.jpg', '/landscape.jpg', '/landscape.jpg']}
+      bgPosition={['center', 'bottom', 'bottom', 'bottom']}
       bgSize={'cover'}
-      bgPosition={'center'}
       position={'relative'}
       bgRepeat={'no-repeat'}
       justifyContent={'center'}

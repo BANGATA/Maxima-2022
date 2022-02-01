@@ -19,7 +19,7 @@ import axios from 'axios'
 import { motion } from 'framer-motion'
 import Swal from 'sweetalert2'
 
-const text = () => {   
+export default function Home() {   
   const { register, handleSubmit, formState:{errors} } = useForm()
 
   const [loading, setLoading] = useState(false)
@@ -33,7 +33,7 @@ const text = () => {
       formData.append("nim_mhs", data.nim_mhs)
       formData.append("name", data.name)
       formData.append("email", data.email)
-      formData.append("divisiID", 11) //ini diubah sesuai folder divisi (list)
+      formData.append("divisiID", 10) //ini diubah sesuai folder divisi (list)
       formData.append("no_hp", data.no_hp)
       formData.append("tempat_lahir", data.tempat_lahir)
       formData.append("tanggal_lahir", data.tanggal_lahir)
@@ -86,7 +86,7 @@ const text = () => {
       width={'100%'}
       // bgGradient={'linear(to-tr, yellow.100, blue.300)'} 
       bgImage={['/phone.jpg', '/landscape.jpg', '/landscape.jpg', '/landscape.jpg']}
-      bgPosition={['center', 'bottom', 'bottom', 'bottom']}
+      bgPosition={['center', 'bottom', 'bottom']}
       bgRepeat={'no-repeat'}
       bgSize={'cover'}
       justifyContent={'center'} 
@@ -336,5 +336,3 @@ const text = () => {
     </Flex>
   )
 }
-
-export default text;
